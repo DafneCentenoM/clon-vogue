@@ -1,0 +1,336 @@
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+.contenedor1{
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cont1{
+    flex-grow: 1;
+    position: static;
+}
+
+.barra{
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transition:.4s all;
+    z-index: 1;
+}
+
+.barra ul{
+    padding: 0px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.barra li{
+    transition: .3s all;
+}
+
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra h2{
+    text-align: center;
+    color:white;
+
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.barra img{
+    padding-top:30px;
+    padding-left:10px;
+
+}
+
+.barra:hover{/*Muesta lo que contiene el menu al pasar por encima*/
+    width: 50%;
+    height: 100%;
+    background-color: rgba(64, 81, 92, 0.98);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.barra:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+
+.barra:hover a{
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.barra:hover img{
+    height: 0px;
+}
+
+.barra:hover li{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+.barra:hover a:hover{
+    font-size: 25px;
+    padding: 30px;
+    background-color: rgba(204, 221, 231, 0.432);
+}
+.cont2{
+    flex-grow: 1;
+    text-align: center;
+}
+.cont2 p{
+    font-size:20px;
+}
+
+.cont3{
+    flex-grow: 1;
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 15px;
+}
+.menu{
+    height: auto;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 15px;
+}
+
+.menu a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+#secciones{
+    display: flex;
+    margin: auto;
+    margin-bottom:50px;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.cont{
+    border: 1px solid #999999;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    width: 480px;
+}
+
+div.cont img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 600px;
+}
+
+footer{
+    background-color: black;
+}
+
+#piedeP{
+    margin:auto;
+    display:flex;/*acomodo los contenedores en horizontal en una sola linea*/
+    justify-content: space-evenly;/*dio espacio entre los 3 div del footer*/
+    align-items: stretch;/*va a alinear los contenedores a la altura del más grande*/
+    padding: 0.5rem;
+    font-weight: bold;
+    max-width: 100%;
+    /*position: relative;*/
+}
+
+.cnt1 ul{
+    text-align: center;
+}
+.cnt1 li{
+    display: inline-block;
+    margin-left: 50px;
+}
+.cnt1{
+    flex-grow: 3;
+}
+.cnt1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.redesS{
+    width: 32px;
+    height: auto;
+}
+
+.cnt1 p{
+    text-align: center;
+    font-size: 50px;
+}
+.cnt2{
+    flex-grow: 1;
+    text-align: left;
+}
+.cnt2 ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+.cnt2 a{
+    text-decoration: none;
+    color: white;
+}
+.cnt2 a:hover{
+    text-decoration: underline;
+}
+
+
+.cnt3{ 
+    flex-grow: 1;
+    text-align: left;
+}
+
+.cnt3 ul li{
+    list-style-type: none;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.cnt3 a{
+    text-decoration: none;
+    color: white;
+}
+.cnt3 a:hover{
+    text-decoration: underline;
+}
+
+/*Estilo del boton*/
+.dropbtn{
+    background-color:black;
+    color: white;/*color de letra*/
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+
+}
+.piePag{
+    display: flex;
+    justify-content: flex-end;
+}
+/*Contenedor <div> - posicion del contenido del menu*/
+.dropdown{
+   margin-left: 30px;
+}
+
+/*Contenido desplegable (oculto por defecto)*/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    color:black;
+    background-color: gray;
+    min-width: 100px;
+    /*box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);*/
+    z-index: 1;
+    transform: translateY(-100%);/*despliega las opciones del menu hacia arriba*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 180px;
+    height: 250px;
+}
+
+/*links dentro del menu desplegable*/
+.dropdown-content a{
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+/*Cambiar el color de los enlaces desplegables al pasar el ratón por encima*/
+.dropdown-content a:hover{
+    background-color: #4e5063;
+    width: 100%;
+    color: black;
+    
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+   
+}
+
+/*Mostrar el menú desplegable al pasar el ratón por encima*/
+.dropdown:hover .dropbtn{
+    background-color:white;
+    color: black;
+}
+
+#derecAuto{
+    background-color: black;
+    padding: 0;
+    padding-bottom:10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#derecAuto a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+}
+#derecAuto li{
+    list-style-type:none;
+    padding-right: 10px;
+    display: inline-block;
+    border-right: 1px solid white;
+    margin-top:10px;
+}
+
+#derecAuto a:hover{
+    text-decoration: underline;
+}

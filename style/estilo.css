@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+/*body{
+    display: flex;
+}*/
+
+[type="checkbox"], label {
+    display: none;
+    }
+
+/*posicionando checkbox */
+[type="checkbox"], label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    }
+    /*ocultando el menú inicial */
+    nav ul {
+    display: none;
+    }
+    /*creando cajita de menu de celular */
+    label {
+    
+    display: block;
+    background: black;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    }
+    /*creando las 3 barritas de la caja del menú */
+    label:after{
+    content:'';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 7px 5px;
+    box-shadow: 0px 10px 0px white, 0px 20px 0px white;
+    }
+    /*verificando el check del input para mostrar o no el menú */
+    [type="checkbox"]:checked ~ ul {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    
+    }
+
+#encabezado{
+    /*align-items: center;*/
+    text-align: center;
+}
+
+header li{
+    display:inline-block;
+    margin: 15px;
+}
+
+header a{
+    list-style-type:none;
+    text-decoration:none;
+    color:black;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+#secciones{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    flex-direction: row;
+}
+.cont{
+    border: 1px solid #999999;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    width: 480px;
+}
+
+
+div.cont img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 600px;
+}
+footer{
+    background-color: black;
+}
+
+#piedeP{
+    margin:auto;
+    display:flex;/*acomodo los contenedores en horizontal en una sola linea*/
+    justify-content: space-evenly;/*dio espacio entre los 3 div del footer*/
+    align-items: stretch;/*va a alinear los contenedores a la altura del más grande*/
+}
+
+
+
+div.piePag{
+    padding-top: 2%;
+    }
+
+.piePag li{
+    margin-bottom: 25px;
+}
+
+div.piePag a{
+    color:white;
+    text-decoration: none;/*quita el subrayado de los links*/
+    list-style-type: none;/*quita las biñetas*/
+    padding-bottom: 20px;
+    margin:auto 20px;
+}
+
+.piePag a:hover{
+    text-decoration: underline;
+}
+#logo{
+    width: 250px;
+    padding-top: 50px;
+}
+
+.redesS{
+    width: 32px;
+    height: auto;
+}
+
+#fvogue{
+    font-size: 60px;
+}
+
+.redes li {
+    display: inline;
+    margin:5px;
+}
+
+#fvogue{
+text-align: center;
+}
+
+
+/*JUSTIFY-CONTENT:CENTER*/
